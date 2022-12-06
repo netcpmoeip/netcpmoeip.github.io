@@ -57,11 +57,14 @@ header::after {
 }
 footer {
     margin-top: 4em;
+    position: relative;
+    height: 5em;
 }
 footer::before {
     content: "";
     z-index: -1;
     position: absolute;
+    top:0;
     right: 0;
     bottom: 0;
     left: 0;
