@@ -233,6 +233,10 @@ p.text-muted {
     color: #808080;
 }
 @media screen and (max-width: 600px) {
+    .container {
+        padding: 1em 0;
+        box-shadow: unset;
+    }
     .wrapper {
         grid-template-columns: repeat(2, 1fr);
     }
