@@ -1,5 +1,5 @@
 jQuery(document).ready(function($){
-    $('.navigation a').on( 'touchstart click', function(e) {
+    $('.navigation a').on( 'click', function(e) {
         e.preventDefault();
         e.stopImmediatePropagation();
 		$( '.card' ).not( '.' + $(this).attr('id') ).hide('fast');

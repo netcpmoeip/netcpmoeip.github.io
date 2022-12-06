@@ -7,6 +7,10 @@ body {
 h1, h2 {
     text-align: center;
 }
+header h1, header h2, header h1 a {
+    margin: auto;
+    color: #fff;
+}
 a {
     text-decoration: none;
     color: #000;
@@ -22,6 +26,8 @@ header {
     aspect-ratio: 20 / 3;
     position: relative;
     margin-bottom: 3em;
+    display: flex;
+    flex-direction: column;
 }
 header::before {
     content: "";
@@ -82,7 +88,7 @@ footer::after {
     max-width: 1200px;
     margin: 0 auto;  
     box-shadow: 12px 0 15px -4px rgba(254, 153, 0, 1), -12px 0 8px -4px rgba(254, 153, 0, 1);
-    
+    padding: 1em;
 }
 .container-sm {
     width: 100%;
@@ -238,6 +244,7 @@ p.text-muted {
     }
     #form {
         margin: 1em 0;
+        width: auto;
     }
     #form .row {
         flex-direction: column;
