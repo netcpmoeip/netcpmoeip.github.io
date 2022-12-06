@@ -11,17 +11,17 @@
 </head>
 <body>
 <header>
-    <h1>Придумаем</h1>
-    <div class="navigation">
-        <a id="project">Проекты</a>
-        <a id="tool">Инструменты</a>
-        <a id="lecture">Лекции</a>
-        <a id="people">Люди</a>
-        <a id="feedback">Отзывы</a>
-    </div>
+    <h1 id="index">Придумаем</h1>
 </header>
-<main>
+<main>    
     <div class="container">
+        <div class="navigation">
+            <a id="project">Проекты</a>
+            <a id="tool">Инструменты</a>
+            <a id="lecture">Лекции</a>
+            <a id="people">Люди</a>
+            <a id="feedback">Отзывы</a>
+        </div>
         <div class="wrapper">
             <div class="card tool">
                 <div class="image-wrapper">
@@ -52,24 +52,22 @@
                     <img src="./img/aleksandr-balaba.jpg">
                 </div>
                 <div class="title">Александр Балаба</div>
+                <div class="sub-title">Сценарист, гейм-дизайнер, продюсер</div>
             </div>
-            <div class="card misc">
-                <div class="image-wrapper">
-                    <img src="./img/fig.png">
-                </div>
-                <div class="title"><a href="solution.html">Решить свою проблему</a></div>
-            </div>
-            <div class="card people">
-                <div class="image-wrapper">
-                    <img src="./img/olga-petrushina.jpeg">
-                </div>
-                <div class="title">Ольга Петрушина</div>
-            </div>
+            <a class="card misc" href="solution.html">
+                
+                    <div class="image-wrapper">
+                        <img src="./img/fig.png">
+                    </div>
+                    <div class="title">Решить свою проблему</div>
+                
+            </a>
             <div class="card people">
                 <div class="image-wrapper">
                     <img src="./img/bogdan-kravtsov-3.jpg">
                 </div>
                 <div class="title">Богдан Кравцов</div>
+                <div class="sub-title">Предприниматель, аналитик, лингвист, художник и мыслитель</div>
             </div>
             <div class="card feedback">
                 <div class="image-wrapper">
@@ -80,5 +78,6 @@
         </div>
     </div>
 </main>
+<footer></footer>
 </body>
 </html>
