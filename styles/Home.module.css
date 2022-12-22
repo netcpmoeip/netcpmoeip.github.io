@@ -1,0 +1,149 @@
+.sm {
+    width: 100%;
+    max-width: 800px;
+}
+
+.container{
+    padding: 1em;
+}
+.content {
+    margin: 1em;
+}
+.content h1 {
+    margin: 1em auto 0;
+}
+.content h2 {
+    margin: .5em auto 0;
+}
+
+.navigation {
+    justify-content: center;
+    overflow: scroll;
+    display: flex;
+    margin: 1.5em auto;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background-color: #fff;
+}
+.navigation a {
+    margin: 1em;
+    font-size: 1.25em;
+    cursor: pointer;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    grid-auto-flow: row;
+    column-gap: .75em;
+    row-gap: .75em;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: .75em .75em 1em;
+}
+.wrapper div:nth-child(6n-3), .wrapper div:nth-child(7n-3) {
+    grid-column: auto /span 2;
+}
+.card.background {
+    background-color: #483d8b;
+}
+.card.background .title{
+    color: #fff;
+}
+.clickable {
+    text-decoration: underline;
+}
+.card img {
+    width: 100%;
+}
+.card .title {
+    font-size: 1.25em;
+    margin: auto .75em 0;
+    text-align: center;
+}
+.card .button {
+    background-color: #0088bb;
+    border-radius: 0.75em;
+    border: 1px solid #0088bb;
+    max-width: max-content;
+    color: #fff;
+    padding: .5em .75em;
+    margin: auto auto 0;
+    font-size: 1.25em;
+}
+
+.feedback a.button {
+    background-color: #fff;
+    color: #000;
+    margin-bottom: 1em;
+}
+a.button {
+    background-color: #ff9900;
+    border-radius: 0.75em;
+    border: 1px solid #ff9900;
+    max-width: max-content;
+    color: #fff;
+    padding: .5em .75em;
+    margin: 1em auto;
+    font-size: 1.25em;
+    display: flex;
+}
+.row {
+    display: flex;
+    margin-bottom: 1em;
+}
+.mail_wrapper {
+    width: 80%;
+}
+.row p {
+    margin-top: 0;
+}
+p.text_muted {
+    font-size: .75em;
+    color: #808080;
+}
+.sub_title {
+    margin-bottom: 0;
+}
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    top: 0;
+    z-index: 999;
+    display: flex;
+    cursor: pointer;
+}
+.close_button {
+    position: absolute;
+    top: 1.5em;
+    right: 1.5em;
+    font-weight: 800;
+    font-size: 2.5em;
+    color: #fff;
+}
+@media screen and (max-width: 768px) {
+    .container {
+        box-shadow: unset;
+    }
+    .wrapper {
+        grid-template-columns: repeat(2, 1fr);;
+    }
+    .card .title, .navigation a {
+        font-size: 1em;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .navigation {
+        justify-content: left;
+    }
+    .close_button {
+        top: 1em;
+        right: 1em;
+    }
+  }
